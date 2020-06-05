@@ -3,7 +3,7 @@
   "version": "2.4.0",
   "description": "Cordova Jida Local Web Server Plugin",
   "cordova": {
-    "id": "cordova-jida-local-webserver",
+    "id": "cordova-plugin-jida-local-webserver",
     "platforms": [
       "ios"
     ]

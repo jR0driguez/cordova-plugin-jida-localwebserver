@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Collaborne/cordova-plugins.git"
+    "url": "https://github.com/jR0driguez/cordova-local-webserver",
   },
   "keywords": [
     "cordova",
@@ -26,10 +26,8 @@
   ],
   "author": "",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/Collaborne/cordova-plugins/issues"
-  },
-  "homepage": "https://github.com/Collaborne/cordova-plugins#readme",
+  ,
+  "homepage": "https://github.com/jR0driguez/cordova-local-webserver#readme",
   "dependencies": {
     "urijs": "^1.17.1"
   }

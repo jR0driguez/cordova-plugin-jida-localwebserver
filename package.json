@@ -1,6 +1,6 @@
 {
   "name": "cordova-jida-local-webserver",
-  "version": "2.3.1",
+  "version": "2.4.0",
   "description": "Cordova  Jida Local Web Server Plugin",
   "cordova": {
     "id": "cordova-jida-local-webserver",

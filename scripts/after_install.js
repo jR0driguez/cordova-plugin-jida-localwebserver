@@ -27,9 +27,9 @@ var path = require('path');
 var URI = require('url');
 var old_content_src_value;
 
-module.exports = function(context) {
+module.exports = function (context) {
     var config_xml = path.join(context.opts.projectRoot, 'config.xml');
-    var et = context.requireCordovaModule('elementtree');
+    var et = context.require('elementtree');
 
     var data = fs.readFileSync(config_xml).toString();
     var etree = et.parse(data);
@@ -40,7 +40,7 @@ module.exports = function(context) {
         var content_src = URI.parse(old_content_src_value);
         if (content_src.hostname !== 'localhost') {
             var backup_json = path.join(context.opts.plugin.dir, 'backup.json');
-            var backup_value = { content_src : old_content_src_value };
+            var backup_value = {content_src: old_content_src_value};
             fs.writeFileSync(backup_json, JSON.stringify(backup_value));
 
             // XXX: Should we retain the name of the index file here?
@@ -51,9 +51,10 @@ module.exports = function(context) {
     var altcontentsrcTag = etree.findall("./preference[@name='AlternateContentSrc']");
     if (altcontentsrcTag.length > 0) {
         altcontentsrcTag[0].set('value', old_content_src_value);
-    } else {
-      var pref = et.Element('preference', { name: 'AlternateContentSrc', value: old_content_src_value });
-      etree.getroot().append(pref);
+    }
+    else {
+        var pref = et.Element('preference', {name: 'AlternateContentSrc', value: old_content_src_value});
+        etree.getroot().append(pref);
     }
 
     data = etree.write({'indent': 4});

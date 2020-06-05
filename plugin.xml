@@ -17,12 +17,12 @@
   specific language governing permissions and limitations
   under the License.
 -->
-<plugin id="cordova-jida-local-webserver" version="2.4.0" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+<plugin id="cordova-plugin-jida-local-webserver" version="2.4.0" xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android">
     <name>CordovaLocalWebServer</name>
     <description>Cordova Local Web Server Plugin</description>
     <keywords>cordova,local web server</keywords>
-    <repo>https://github.com/jR0driguez/cordova-local-webserver</repo>
+    <repo>https://github.com/jR0driguez/cordova-plugin-jida-localwebserver.git</repo>
 
     <hook type="after_plugin_install" src="scripts/after_install.js"/>
     <hook type="before_plugin_uninstall" src="scripts/before_uninstall.js"/>

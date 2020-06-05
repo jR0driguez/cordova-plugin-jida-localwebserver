@@ -1,7 +1,7 @@
 {
   "name": "cordova-jida-local-webserver",
   "version": "2.4.0",
-  "description": "Cordova  Jida Local Web Server Plugin",
+  "description": "Cordova Jida Local Web Server Plugin",
   "cordova": {
     "id": "cordova-jida-local-webserver",
     "platforms": [
@@ -26,7 +26,6 @@
   ],
   "author": "",
   "license": "Apache-2.0",
-  ,
   "homepage": "https://github.com/jR0driguez/cordova-local-webserver#readme",
   "dependencies": {
     "urijs": "^1.17.1"

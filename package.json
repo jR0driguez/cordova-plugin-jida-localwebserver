@@ -1,9 +1,9 @@
 {
-  "name": "cordova-labs-local-webserver",
+  "name": "cordova-jida-local-webserver",
   "version": "2.3.1",
-  "description": "Cordova Local Web Server Plugin",
+  "description": "Cordova  Jida Local Web Server Plugin",
   "cordova": {
-    "id": "cordova-labs-local-webserver",
+    "id": "cordova-jida-local-webserver",
     "platforms": [
       "ios"
     ]
